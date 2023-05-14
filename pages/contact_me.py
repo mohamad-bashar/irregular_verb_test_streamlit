@@ -45,7 +45,7 @@ From {email}
 colored_header(
     label="📬Contact Me",
     description='',
-    color_name="orange-70",
+    color_name="blue-50",
 )
 with st.form(key="email_form"):
     mdlit("Make sure of your [green]email ✔[/green]")

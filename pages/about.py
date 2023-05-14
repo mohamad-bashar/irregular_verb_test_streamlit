@@ -11,5 +11,6 @@ with st.sidebar:
 
 descp = """Introducing the Irregular Verb Quizzer, a simple and engaging app developed by student Mohamad Bashar and supervised by teacher Alaa Hamdan. This app helps students memorize irregular verbs in a fun and interactive way.
 The user-friendly interface caters to learners of all levels, making it easy for everyone to practice and improve their knowledge of irregular verbs."""
-colored_header(label="Irregular Verbs Quiz💎👍", description='')
+colored_header(label="Irregular Verbs Quiz💎👍",
+               description='', color_name="blue-50")
 st.write(descp)

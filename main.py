@@ -25,9 +25,8 @@ st.set_page_config('Quiz🚀', layout='centered')
 
 hide_streamlit_style = """
         <style>
-        #MainMenu {visibility : hidden;}
         footer {visibility : hidden;}
-        #irregular-verbs-quiz {font-size: calc(1.8rem + .6vw); font-weight: 700;};
+        #irregular-verbs-quiz {font-size: calc(1.6rem + .6vw); font-weight: 700;};
         </style>
         """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)

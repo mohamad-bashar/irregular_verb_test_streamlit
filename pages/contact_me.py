@@ -23,7 +23,7 @@ i = False
 
 
 def send_mail(email, msg):
-    user_name = "mohamadbashar07@gmail.com"
+    user_name = "mohamadbashar0777@gmail.com"
     user_pass = os.getenv("PASSWORD")
     receiver = "mohamadbashar07@gmail.com"
 

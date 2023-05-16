@@ -68,7 +68,7 @@ while True:
     else:
         break
 if streak == 5 or streak == 10 or streak == 15 or streak == 20 or streak == 25:
-    rain('🔥', '50', 10, 1)
+    rain('🔥', '50', 35, 1)
 
 container = st.container()
 with container:

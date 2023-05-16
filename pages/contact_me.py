@@ -63,6 +63,9 @@ with st.form(key="email_form"):
             animation_length=1,
         )
 
+with st.sidebar:
+    st.header(f'Welcome!')
+
 
 if i:
     st.success(body="Your message was sent successfully!", icon="✔")

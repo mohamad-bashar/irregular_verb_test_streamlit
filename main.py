@@ -49,9 +49,6 @@ if 'success' not in st.session_state:
 
 with st.sidebar:
     st.header(f'Welcome!')
-    st.subheader("Download the irregular verbs Here:")
-    st.download_button(
-        "Downlod PDF", data='./list-of-irregular-verbs.pdf', file_name='irregular_verbs.pdf')
 
 colored_header(
     label="Irregular Verbs Quiz🚀✍👨‍🎓",

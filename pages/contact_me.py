@@ -45,7 +45,7 @@ From {email}
 colored_header(
     label="📬Contact Me",
     description='',
-    color_name="blue-50",
+    color_name="blue-60",
 )
 with st.form(key="email_form"):
     mdlit("Make sure of your [green]email ✔[/green]")
@@ -64,7 +64,15 @@ with st.form(key="email_form"):
         )
 
 with st.sidebar:
-    st.header(f'Welcome!')
+    st.header(f'Hi There!')
+    st.subheader("download the irregular verbs from here👇")
+    with open("./list-of-irregular-verbs.pdf", "rb") as file:
+        btn = st.download_button(
+            label="Download PDF",
+            data=file,
+            file_name="Irregular Verbs.pdf",
+            mime="image/png"
+        )
 
 
 if i:

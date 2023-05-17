@@ -84,7 +84,7 @@ if streak == 5 or streak == 10 or streak == 15 or streak == 20 or streak == 25:
 colored_header(
     label="Irregular Verbs Quiz🚀✍👨‍🎓",
     description='',
-    color_name="blue-60",
+    color_name="red-80",
 )
 
 
@@ -94,8 +94,9 @@ with container:
     with col3:
         st.subheader(st.session_state['question'])
 
-    answer = st.text_input("Answer", max_chars=20,
-                           key='ans', placeholder='understood...')
+    answer = st.empty()
+    user_ans = answer.text_input("Answer", max_chars=20,
+                      key='ans', placeholder='Understood...')
     col1, col2, c, = st.columns([1, 2, 3])
     with col1:
         submit = st.button("📌Submit")
@@ -110,10 +111,12 @@ with container:
         st.experimental_rerun()
 
     if submit and st.session_state['submit'] == False and answer != '':
+        answer.text_input("Answer", max_chars=20,
+                      key='ans1', value=user_ans, disabled=True)
         st.session_state['submit'] = True
         answers = st.session_state['answer'].split('/')
         for ans in answers:
-            if answer.lower() == ans.lower():
+            if user_ans.lower() == ans.lower():
                 st.session_state['success'] = True
                 st.session_state['data_question'].append(1)
                 if len(answers) == 2:
@@ -141,12 +144,12 @@ with container:
         col5, col6 = st.columns(2)
         with col5:
             streak = streak_count()
-            string = f"<span style = 'font-size: 1.35rem; font-weight: 600; line-height:2.4;'>🔥 {streak}</span>"
+            string = f"<span style = 'font-size: 1.35rem; font-weight: 600; line-height:2.0;'>🔥 {streak}</span>"
             st.write(string, unsafe_allow_html=True)
         with col6:
             correct_answer = str(st.session_state['data_question'].count(1))
             all_answer = str(len(st.session_state['data_question'])-1)
-            string = f"<span style = 'font-size: 1.35rem; font-weight: 600; line-height:2.4;'>{correct_answer} of {all_answer}</span>"
+            string = f"<span style = 'font-size: 1.35rem; font-weight: 600; line-height:2.0;'>{correct_answer} of {all_answer}</span>"
             st.write(string, unsafe_allow_html=True)
 
 

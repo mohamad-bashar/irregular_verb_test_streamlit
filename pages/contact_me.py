@@ -45,9 +45,9 @@ From {email}
 colored_header(
     label="📬Contact Me",
     description='',
-    color_name="blue-60",
+    color_name="red-80",
 )
-with st.form(key="email_form"):
+with st.form(key="email_form", clear_on_submit=True):
     mdlit("Make sure of your [green]email ✔[/green]")
     user_email = st.text_input("Enter your email address *")
     message = st.text_area("Enter your message *")

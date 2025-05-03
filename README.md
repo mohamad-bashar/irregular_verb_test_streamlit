@@ -19,11 +19,6 @@ This app aims to make the often tedious task of learning irregular verbs more in
 You can access the live quiz here:
 [https://irregular-verbs.streamlit.app](https://irregular-verbs.streamlit.app)
 
-## Screenshot
-
-![Irregular Verbs Quiz Screenshot](images/irregular_verbs_screenshot.webp)
-*(Note: Ensure the image path is correct relative to where this README is placed in the GitHub repository, or use an absolute URL if hosting the image elsewhere.)*
-
 ## Technologies Used
 
 *   Python
